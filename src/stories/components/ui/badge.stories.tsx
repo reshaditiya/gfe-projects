@@ -27,6 +27,17 @@ const meta = {
       table: {
         defaultValue: { summary: 'medium' },
       },
+      type: 'string',
+    },
+    asChild: {
+      description: 'Render as child',
+    },
+  },
+  parameters: {
+    docs: {
+      description: {
+        component: 'Small label to highlight important information or status.',
+      },
     },
   },
 } satisfies Meta<typeof Badge>;
@@ -36,7 +47,8 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    color: 'neutral',
     children: 'Label',
+    color: 'neutral',
+    size: 'medium',
   },
 };
