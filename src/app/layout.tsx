@@ -2,12 +2,12 @@ import type { Metadata } from 'next';
 import { Noto_Sans, Noto_Sans_Mono } from 'next/font/google';
 import './globals.css';
 
-const notoSans = Noto_Sans({
+export const notoSans = Noto_Sans({
   variable: '--font-noto-sans',
   subsets: ['latin'],
 });
 
-const notoSansMono = Noto_Sans_Mono({
+export const notoSansMono = Noto_Sans_Mono({
   variable: '--font-noto-sans-mono',
   subsets: ['latin'],
 });
@@ -23,10 +23,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${notoSans.variable} ${notoSansMono.variable} antialiased`}
-      >
+    <html lang="en" className={`${notoSans.variable} ${notoSansMono.variable}`}>
+      <body className={`font-[family-name:var(--font-noto-sans)] antialiased`}>
         {children}
       </body>
     </html>
