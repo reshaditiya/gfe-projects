@@ -36,7 +36,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: 'Small label to highlight important information or status.',
+        component: 'Modified version of https://ui.shadcn.com/docs/components/badge',
       },
     },
   },
