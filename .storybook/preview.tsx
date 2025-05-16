@@ -14,6 +14,7 @@ const preview: Preview = {
     a11y: {
       test: 'todo',
     },
+    layout: 'centered',
   },
   decorators: [
     (Story) => (
