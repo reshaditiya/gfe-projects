@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "chromatic": "CHROMATIC_TOKEN=$(grep ^CHROMATIC_TOKEN= \".env.${NODE_ENV:-development}\" | cut -d '=' -f2) && npx chromatic --project-token=\"$CHROMATIC_TOKEN\""
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.2",
