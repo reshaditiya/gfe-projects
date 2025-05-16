@@ -15,8 +15,8 @@ export default function Page() {
   ];
 
   return (
-    <main className="mt-50 flex min-h-screen justify-center">
-      <div className="flex w-60 flex-col items-start gap-6.25">
+    <main className="flex min-h-screen items-center justify-center">
+      <div className="flex flex-col items-start gap-6.25">
         {colors.map((color) => (
           <div key={color} className="flex items-center gap-6">
             {sizes.map((size) => (
