@@ -24,7 +24,7 @@ const badgeVariantsConfig = {
 };
 
 const badgeVariants = cva(
-  'focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-gfe-text-error/20 dark:aria-invalid:ring-gfe-text-error/40 aria-invalid:border-gfe-text-error inline-flex w-fit shrink-0 items-center justify-center gap-1 overflow-hidden rounded-2xl border whitespace-nowrap transition-[color,box-shadow] focus-visible:ring-[3px] [&>svg]:pointer-events-none [&>svg]:size-3',
+  'focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-gfe-text-error/20 aria-invalid:border-gfe-text-error inline-flex w-fit shrink-0 items-center justify-center gap-1 overflow-hidden rounded-2xl border whitespace-nowrap transition-[color,box-shadow] focus-visible:ring-[3px] [&>svg]:pointer-events-none [&>svg]:size-3',
   {
     variants: badgeVariantsConfig,
     defaultVariants: {
