@@ -1,11 +1,11 @@
 import { Badge, badgeVariantsConfig } from '@/components/ui/badge';
 import type { Meta, StoryObj } from '@storybook/react';
 
-const colorVariantOptions = Object.keys(badgeVariantsConfig.color) as Array<
+const colorOptions = Object.keys(badgeVariantsConfig.color) as Array<
   keyof typeof badgeVariantsConfig.color
 >;
 
-const sizeVariantOptions = Object.keys(badgeVariantsConfig.size) as Array<
+const sizeOptions = Object.keys(badgeVariantsConfig.size) as Array<
   keyof typeof badgeVariantsConfig.size
 >;
 
@@ -15,14 +15,14 @@ const meta = {
   tags: ['autodocs'],
   argTypes: {
     color: {
-      options: colorVariantOptions,
+      options: colorOptions,
       control: { type: 'select' },
       table: {
         defaultValue: { summary: 'neutral' },
       },
     },
     size: {
-      options: sizeVariantOptions,
+      options: sizeOptions,
       control: { type: 'radio' },
       table: {
         defaultValue: { summary: 'medium' },
