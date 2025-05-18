@@ -29,9 +29,6 @@ const meta = {
       },
       type: 'string',
     },
-    asChild: {
-      description: 'Render as child',
-    },
   },
   parameters: {
     docs: {
