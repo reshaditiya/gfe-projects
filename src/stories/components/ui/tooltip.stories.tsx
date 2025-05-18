@@ -13,7 +13,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: 'Modified version of https://ui.shadcn.com/docs/components/tooltip',
+        component: 'Docs: https://ui.shadcn.com/docs/components/tooltip',
       },
     },
   },
