@@ -36,7 +36,6 @@ const meta = {
     onCheckedChange: fn(),
     'aria-label': 'Label',
     size: 'medium',
-    checked: false,
   },
 } satisfies Meta<typeof Switch>;
 
