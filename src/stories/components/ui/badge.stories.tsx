@@ -37,15 +37,14 @@ const meta = {
       },
     },
   },
-} satisfies Meta<typeof Badge>;
-
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-export const Default: Story = {
   args: {
     children: 'Label',
     color: 'neutral',
     size: 'medium',
   },
-};
+} satisfies Meta<typeof Badge>;
+
+export default meta;
+type Story = StoryObj<typeof meta>;
+
+export const Default: Story = {};

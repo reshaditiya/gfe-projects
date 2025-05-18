@@ -22,12 +22,6 @@ const meta = {
     TooltipTrigger,
     TooltipContent,
   },
-} satisfies Meta<typeof Tooltip>;
-
-export default meta;
-type Story = StoryObj<typeof meta>;
-
-export const Default: Story = {
   args: {
     children: (
       <Tooltip open>
@@ -54,10 +48,10 @@ export const Default: Story = {
         disable: true,
       },
     },
-    skipDelayDuration: {
-      control: {
-        disable: true,
-      },
-    },
   },
-};
+} satisfies Meta<typeof Tooltip>;
+
+export default meta;
+type Story = StoryObj<typeof meta>;
+
+export const Default: Story = {};
